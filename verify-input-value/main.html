@@ -7,8 +7,25 @@
       //
       // TODO: Implement this function.
       //
-      const makeInputVerifier = () => {
-        return () => {}
+      const makeInputVerifier = (minimum, maximum) => {
+        return (input) => {
+          const LESS_THAN_MIN = 'Input is less than minimum value';
+          const IN_RANGE = 'Input is in range';
+          const GREATER_THAN_MAX = 'Input is more than maximum value';
+          const ERROR = 'ERROR';
+
+          if (minimum > maximum) {
+            return ERROR;
+          }
+
+          if (input < minimum) {
+            return LESS_THAN_MIN;
+          } else if (input >= minimum && input <= maximum) {
+            return IN_RANGE;
+          }
+
+          return GREATER_THAN_MAX;
+        }
       }
     </script>
   </head>
