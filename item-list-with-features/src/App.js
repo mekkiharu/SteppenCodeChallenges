@@ -1,4 +1,4 @@
-import { ItemList } from "./ItemList.jsx"
+import { ItemList } from "./components/ItemList/ItemList.jsx"
 
 import "bulma/css/bulma.min.css"
 

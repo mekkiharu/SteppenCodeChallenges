@@ -1,0 +1,10 @@
+.item {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  border-radius: 2px;
+}
+
+.item:hover {
+  background: hsl(219, 70%, 96%);
+}
